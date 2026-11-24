@@ -1,0 +1,11 @@
+# safety net: never commit vendor firmware, CPS tools, or keys
+*.bin
+*.dpl
+*.exe
+*.dll
+*.zip
+*.rdt
+*.dat
+projcsky*/
+proj*/
+*.gpr
