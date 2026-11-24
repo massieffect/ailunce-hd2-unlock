@@ -48,12 +48,12 @@ GMRS/MURS are **analog**, so on each such channel set:
 - **Channel type = Analog FM** (not Digital/DMR — a DMR GMRS channel won't work).
 - **TX Admit / Admit Criteria = Always** (if it's "Inhibit" or "Channel Busy", PTT is blocked).
 
-## Heads-up: it re-locks after a CPS write
+## Persistence
 
-The region setting lives in the **codeplug**, so **writing from the CPS resets it to the
-ham-only default** and you'll have to redo PTT+8. Workaround: do all your CPS programming
-first, then run the PTT+8 unlock **last**. (A firmware patch that makes the open range
-permanent is the real fix — see the repo notes.)
+The Extend setting is stored in the radio and **persists through normal CPS writes** —
+once you've unlocked, it stays unlocked (tested on 3.1.9.008). A full **Data Init** factory
+reset (Menu+Exit → confirm) reverts it to the ham-only default, so just redo PTT+8 if you
+ever reset.
 
 ## Legal note
 

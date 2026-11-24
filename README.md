@@ -19,7 +19,7 @@ menu to open it:
 > **Extend** → set TX **136–174 / 400–520** → **Menu** to save.
 
 (The old "Menu+8/Menu+6" community guide is wrong for the HD2 — it's **PTT+8 / PTT+6**.
-Note: a CPS write re-locks it; see UNLOCK.md.)
+The Extend setting persists through CPS writes; only a Data Init factory reset reverts it.)
 
 ### 2. [BEEP.md](BEEP.md) — remove the power-on tone
 The startup chime is a **pure-sine** 3-note tone (~782 / 660 / 2078 Hz). It comes from the
